@@ -25,7 +25,7 @@ Get[NotebookDirectory[] <> "RNAStructureIdentifier.wl"]
 
 ## Quick Start
 
-We provide a quick tutorial .nb to demonstrate functions by examples.
+We provide a quick tutorial (tutorial.nb) to demonstrate functions by examples.
 
 
 ## References
