@@ -25,7 +25,7 @@ Get[NotebookDirectory[] <> "RNAStructureIdentifier.wl"]
 
 ## Quick Start
 
-Usually you'll simply unpack the distribution tarball, configure and make:
+We provide a quick tutorial .nb to demonstrate functions by examples.
 
 
 ## References
