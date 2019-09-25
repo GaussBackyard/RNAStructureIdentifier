@@ -140,6 +140,13 @@ Return[ent]
 ]
 
 
+BPEntf[esb_] :=
+ (* Input an ensemble of secondary structures using pair tables, Return entropies of all base pairs in the ensemble of structures. Base pairs are in descending order.*)
+ Module[{bp = TallyBPESB[esb], i, m = Length[esb]},
+  Return[Table[Entf[{bp[[i, 2]], m - bp[[i, 2]]}, m], {i, 1, Length[bp]}]]
+  ]
+
+
 MaxEntfBP[esb_]:=
 (*
 Input an ensemble. Return  the maximum entropy base pair.
