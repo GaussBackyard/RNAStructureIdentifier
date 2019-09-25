@@ -15,7 +15,7 @@ Amongst other things, our implementations allow you to:
 
 The package focuses on how to identify a target from a Boltzmann ensemble of secondary structures. The key idea is to employ an information-theoretic approach to solve the problem, via considering a variant of the Rényi-Ulam game. Our framework is centered around the ensemble tree, a hierarchical bi-partition of the input ensemble, that is constructed by recursively querying about whether or not a base pair of maximum information entropy is contained in the target. These queries are answered via relating local with global chemical probing data, employing the modularity in RNA secondary structures (see References).
 
-We present that  leaves  of the tree are comprised of sub-samples exhibiting a distinguished structure with high probability. In particular, for a Boltzmann ensemble incorporating probing data, which is well established in the literature, the probability of our framework correctly identifying the target in the leaf is greater than 90%.
+In [1](http://arxiv.org/abs/1909.05744), we present that  leaves  of the tree are comprised of sub-samples exhibiting a distinguished structure with high probability. In particular, for a Boltzmann ensemble incorporating probing data, which is well established in the literature, the probability of our framework correctly identifying the target in the leaf is greater than 90%.
 
 ## Installation
 
@@ -38,7 +38,7 @@ We provide a quick tutorial (tutorial.nb) to demonstrate functions by examples.
 
 If you use our package, you may want to cite the follwing publications:
 
-[Thomas J.X. Li and Christian M. Reidys (2019)](http://arxiv.org/abs/1909.05744)
+1.[Thomas J.X. Li and Christian M. Reidys (2019)](http://arxiv.org/abs/1909.05744)
 "On an enhancement of RNA probing data using Information Theory", arXiv:1909.05744
 
 
