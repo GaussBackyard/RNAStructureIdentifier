@@ -1,5 +1,17 @@
 # RNAStructureIdentifier
-Identifying the target secondary structure from RNA structure ensemble
+A Mathematica package for identifying the target secondary structure from RNA structure ensemble.
+
+Amongst other things, our implementations allow you to:
+
+- compute the ensemble tree, a hierarchical bi-partition of the ensemble of structures
+- calculate the base pairs having maximum information entropy
+- predict the target structure via recursively querying about whether or not
+	a base pair of maximum entropy is contained in the target
+- visualize the ensemble tree, together with base pairs of maximum entropy
+- draw a single secondary structure as a diagram
+- present an ensemble of secondary structures as a greyscale diagram
+
+
 
 ## References
 
