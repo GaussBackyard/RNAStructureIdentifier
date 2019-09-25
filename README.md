@@ -30,7 +30,7 @@ Usually you'll simply unpack the distribution tarball, configure and make:
 
 ## References
 
-If you use our software package, you may want to cite the follwing publications:
+If you use our package, you may want to cite the follwing publications:
 
 [Thomas J.X. Li and Christian M. Reidys (2019)](http://arxiv.org/abs/1909.05744)
 "On an enhancement of RNA probing data using Information Theory", arXiv:1909.05744
