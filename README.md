@@ -13,7 +13,7 @@ Amongst other things, our implementations allow you to:
 
 ## Installation
 
-To load the package, the only thing you need to install is Wolfram Mathematica.[Free Trial](https://www.wolfram.com/mathematica/trial/)
+To load the package, the only thing you need to install is Wolfram Mathematica ([Free Trial])(https://www.wolfram.com/mathematica/trial/).
 
 ## References
 
