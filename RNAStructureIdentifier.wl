@@ -10,6 +10,10 @@ DrawESB::usage="DrawESB[esb_]:=\[IndentingNewLine]Input an ensemble of secondary
 Draw a secondary structure given by base pairs and theirs probabilities p.";
 
 
+MaxEntfBP::usage="MaxEntfBP[esb_]:=
+Input an ensemble. Return  the maximum entropy base pair."
+
+
 TreeMEBP::usage="TreeMEBP[esb_,level_:10]: 
 Input an ensemble of secondary structures using pair tables, \[IndentingNewLine]Return the set of all base pairs (i,j) for each structure in the ensemble, \[IndentingNewLine]  the vector of base pairs for each structure in the ensemble, \[IndentingNewLine]the MEBPSpace of all maximum entropy base pairs of all clusters,\[IndentingNewLine]the TreeSpace containing all clusters, each level of clusters representing the ones containing the maximum entropy base pairs or not.";
 
