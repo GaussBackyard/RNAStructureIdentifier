@@ -11,9 +11,11 @@ Amongst other things, our implementations allow you to:
 - draw a single secondary structure as a diagram
 - present an ensemble of secondary structures as a greyscale diagram
 
-## Installation
+## Prerequisites
 
-To load the package, the only thing you need to install is Wolfram Mathematica [Free Trial](https://www.wolfram.com/mathematica/trial/).
+To use the package, the only thing you need to install is Wolfram Mathematica [Free Trial](https://www.wolfram.com/mathematica/trial/).
+
+We have tested our package using Mathematica versions 11.3.0 and 12.0.0 under both UNIX and Windows system.
 
 ## References
 
