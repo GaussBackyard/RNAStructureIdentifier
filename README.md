@@ -38,7 +38,7 @@ We provide a quick tutorial (tutorial.nb) to demonstrate functions by examples.
 
 If you use our package, you may want to cite the follwing publications:
 
-1.[Thomas J.X. Li and Christian M. Reidys (2019)](http://arxiv.org/abs/1909.05744)
+1. [Thomas J.X. Li and Christian M. Reidys (2019)](http://arxiv.org/abs/1909.05744)
 "On an enhancement of RNA probing data using Information Theory", arXiv:1909.05744
 
 
