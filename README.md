@@ -15,7 +15,7 @@ Amongst other things, our implementations allow you to:
 
 To use the package, the only thing you need to install is Wolfram Mathematica [Free Trial](https://www.wolfram.com/mathematica/trial/).
 
-We have tested our package using Mathematica versions 11.3.0 and 12.0.0 under both UNIX and Windows system.
+We have tested our package using Mathematica versions 11.3.0 and 12.0.0 under UNIX and Windows system.
 
 ## References
 
