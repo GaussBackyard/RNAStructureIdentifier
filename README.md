@@ -17,6 +17,18 @@ To use the package, the only thing you need to install is Wolfram Mathematica [F
 
 We have tested our package using Mathematica versions 11.3.0 and 12.0.0 under UNIX and Windows system.
 
+## Usage
+
+-Load the pacakge with
+```
+Get[NotebookDirectory[] <> "RNAStructureIdentifier.wl"]
+```
+
+## Quick Start
+
+Usually you'll simply unpack the distribution tarball, configure and make:
+
+
 ## References
 
 If you use our software package, you may want to cite the follwing publications:
