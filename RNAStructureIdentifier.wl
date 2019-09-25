@@ -3,28 +3,55 @@
 BeginPackage["Bisect`"];
 
 
-Structure2Pair::usage="Input a structure s in dot-bracket notation.\[IndentingNewLine] Output a pair table.";
+Structure2Pair::usage="Structure2Pair[s_]:=
+Input: a structure s in dot-bracket notation.
+Output: a pair table.";
 
 
-DrawESB::usage="DrawESB[esb_]:=\[IndentingNewLine]Input an ensemble of secondary structures using pair tables. 
+DrawESB::usage="DrawESB[esb_]:=
+Input: an ensemble of secondary structures using pair tables. 
 Draw a secondary structure given by base pairs and theirs probabilities p.";
 
 
 MaxEntfBP::usage="MaxEntfBP[esb_]:=
-Input an ensemble. Return  the maximum entropy base pair."
+Input: an ensemble. 
+Return:  the maximum entropy base pair."
 
 
 TreeMEBP::usage="TreeMEBP[esb_,level_:10]: 
-Input an ensemble of secondary structures using pair tables, \[IndentingNewLine]Return the set of all base pairs (i,j) for each structure in the ensemble, \[IndentingNewLine]  the vector of base pairs for each structure in the ensemble, \[IndentingNewLine]the MEBPSpace of all maximum entropy base pairs of all clusters,\[IndentingNewLine]the TreeSpace containing all clusters, each level of clusters representing the ones containing the maximum entropy base pairs or not.";
+Input: an ensemble of secondary structures using pair tables. 
+Return: a list {bp1,bp2,MEBPSpace,TreeSpace}, where
+bp1--the set of all base pairs (i,j) for each structure in the ensemble,
+bp2-- the vector of base pairs for each structure in the ensemble,
+MEBPSpace-- the MEBPSpace of all maximum entropy base pairs of all clusters,
+TreeSpace-- the TreeSpace containing all clusters, each level of clusters representing the ones containing the maximum entropy base pairs or not.";
 
 
 RanPdtMEBP::usage="RanPdtMEBP[TreeMEBP_,MFE_,esb_,lvl_:10,error_:0.01,error2_:0.05]: 
-Input:\[IndentingNewLine] TreeMEBP, which is the output of TreeMEBP.\[IndentingNewLine]   MFE, target structure,\[IndentingNewLine]   esb, the ensemble of structures.\[IndentingNewLine]error: the error rate when the truthful answer is Yes.\[IndentingNewLine]error2: the error rate when the truthful answer is No.\[IndentingNewLine]\[IndentingNewLine]Return {str,ratio, leaveinfo, pathinfo}\[IndentingNewLine]
-str denotes the structure predicted in the leave.\[IndentingNewLine]ratio denotes the ratio of the predicted structure in the leave.
+Input:
+TreeMEBP, which is the output of TreeMEBP,
+MFE, target structure,
+esb, the ensemble of structures,
+error: the error rate when the truthful answer is Yes,
+error2: the error rate when the truthful answer is No.\[IndentingNewLine]
+Output: a list {str,ratio, leaveinfo, pathinfo}\[IndentingNewLine]
+str denotes the structure predicted in the leave.
+ratio denotes the ratio of the predicted structure in the leave.
 
 leaveinfo={leave,leavecorrectness}
-leave: the leave ensemble at the end of the path.\[IndentingNewLine]leavecorrectness: whether choose a correct leaf.\[IndentingNewLine]1 represents correct, 0 represents wrong.
-\[IndentingNewLine]pathinfo={path, pathcorrectness,pathent,pathbpdist,bpset},\[IndentingNewLine]\[IndentingNewLine]path(result): the path to the cluster closest to MFE.\[IndentingNewLine]The path is a list of length 10.\[IndentingNewLine]For i-th position, 1 represents that the predicted structure contains the i-th MEBP.\[IndentingNewLine]2 represents that predicted does not contain the i-th MEBP.\[IndentingNewLine] 0 represnts that clustering stops.\[IndentingNewLine]\[IndentingNewLine]pathcorrectness: the path correctness to the cluster closest to MFE.\[IndentingNewLine]For i-th position, 1 represents correct, 0 represents wrong, -1 represents initial value.\[IndentingNewLine]\[IndentingNewLine]pathent: the entropy of the cluster on the path. -1 represents initial value.\[IndentingNewLine]\[IndentingNewLine]pathbpdist: bpdist between the cluster and MFE. -1 represents initial value.\[IndentingNewLine]\[IndentingNewLine]bpset: the set of bias base pairs selected on the path.";
+leave: the leave ensemble at the end of the path.
+leavecorrectness: whether choose a correct leaf.
+1 represents correct, 0 represents wrong.
+\[IndentingNewLine]pathinfo={path, pathcorrectness,pathent,pathbpdist,bpset},\[IndentingNewLine]
+path: the path to the cluster closest to MFE.
+      The path is a list of length 10.
+      For i-th position, 
+      1 represents that the predicted structure contains the i-th MEBP.
+      2 represents that predicted does not contain the i-th MEBP.
+      0 represnts that clustering stops.\[IndentingNewLine]pathcorrectness: the path correctness to the cluster closest to MFE.
+        For i-th position, 1 represents correct, 0 represents wrong, -1 represents initial value.
+pathent: the entropy of the cluster on the path. -1 represents initial value.
+pathbpdist: bpdist between the cluster and MFE. -1 represents initial value.\[IndentingNewLine]bpset: the set of bias base pairs selected on the path.";
 
 
 DrawTree::usage="DrawTree[esb_,TreeMEBP_,lvl_]:=\[IndentingNewLine]Input an ensemble of secondary structures, and the output of TreeMEBP, and the max level of the tree (<=3).\[IndentingNewLine]Return the drawing of the tree of clusters, each level of clusters representing the ones containing the maximum entropy base pairs or not.";
