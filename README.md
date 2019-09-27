@@ -33,18 +33,6 @@ Get[NotebookDirectory[] <> "RNAStructureIdentifier.wl"]
 
 We provide a quick tutorial (tutorial.nb) to demonstrate functions by examples.
 
-## Functions
-
-The Package includes the following functions:
-
-| Program           | Description                                                                                                               |
-| ------------------| :-------------------------------------------------------------------------------------------------------------------------|
-| `Structure2Pair`  | Create a pair table from a dot-bracket notation of a secondary structure                            |
-| `MaxEntfBP`       | Calculate the maximum entropy base pair for an ensemble of secondary structures.                    |
-| `TreeMEBP`        | Calculate the ensemble tree, a hierarchical bi-partition for an ensemble of secondary structures    |
-| `RanPdtMEBP`      | Calculate random walks on the ensemble tree based on the error rates                                |
-| `DrawESB`         | Draw a greyscale diagram to present an ensemble of secondary structures                             |
-| `DrawTree`        | Visualize the ensemble tree, together with base pairs of maximum entropy                            |
 
 ## References
 
