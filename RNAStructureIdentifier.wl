@@ -1,6 +1,6 @@
 (* ::Package:: *)
 
-BeginPackage["Bisect`"];
+BeginPackage["RNAStructureIdentifier`"];
 
 
 Structure2Pair::usage="Structure2Pair[s_]:=
