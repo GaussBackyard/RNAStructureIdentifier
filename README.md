@@ -17,6 +17,10 @@ The package focuses on how to identify a target from a Boltzmann ensemble of sec
 
 In [1](http://arxiv.org/abs/1909.05744), we present that  leaves  of the tree are comprised of sub-samples exhibiting a distinguished structure with high probability. In particular, for a Boltzmann ensemble incorporating probing data, which is well established in the literature, the probability of our framework correctly identifying the target in the leaf is greater than 90%.
 
+## Demonstration
+
+We present [a demo](http://demonstrations.wolfram.com/IdentifyingTheTargetFromRNAStructureEnsemble/) of the ensemble trees for 5S rRNA, riboswitch and long non-coding RNA. 
+    
 ## Installation
 
 To use the package, the only thing you need to install is Wolfram Mathematica [Free Trial](https://www.wolfram.com/mathematica/trial/).
