@@ -42,7 +42,7 @@ We provide a quick tutorial (tutorial.nb) to demonstrate functions by examples.
 
 If you use our package, you may want to cite the follwing publications:
 
-1. [Thomas J.X. Li and Christian M. Reidys (2020)] "On an enhancement of RNA probing data using Information Theory", Algorithms for Molecular Biology, 15: 15. 
+1. [Thomas J.X. Li and Christian M. Reidys (2020)](https://10.1186/s13015-020-00176-z) "On an enhancement of RNA probing data using Information Theory", Algorithms for Molecular Biology, 15: 15. 
 
 
 
